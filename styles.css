@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: blue;
+  border-color: black;
+  height: 150px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  border-color: black;
+  height: auto;
+}
+
+nav a{
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+  flex: 30%;
+  background-color: lightblue;
+  border-color: black;
+  height: 250px;
+}
+
+section {
+  flex: 70%;
+  background-color: magenta;
+  border-color: black;
+  height: 300px;
+}
+
+footer {
+  background-color: chocolate;
+  border-color: black;
+  height: 50px;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px){
+    nav, .row{
+        flex-direction: column;
+    }
+}
